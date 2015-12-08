@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/objeto_margin_xs">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/objeto_margin_xs"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Limpieza de Arboles de las Tunas"
+                    android:id="@+id/txtTituloC" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus, lectus volutpat ultrices suscipit, nisi lorem rhoncus tortor, vitae blandit libero tellus ut metus."
+                    android:id="@+id/txtDetalleC"
+                    android:layout_marginBottom="@dimen/objeto_margin_xs"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:src="@drawable/poda"
+                    android:id="@+id/imgImagenC" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/objeto_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Inscribirme"
+                    style="@style/botones"
+                    android:id="@+id/btnInscribir" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/objeto_margin"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Lugar : Las tunas"
+                    android:id="@+id/txtLugarC" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Fecha y Hora: 21/12/2015 8:00 a.m"
+                    android:id="@+id/txtFechaC" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Otros : Llevar herramientas de trabajo"
+                    android:id="@+id/txtOtrosC" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>

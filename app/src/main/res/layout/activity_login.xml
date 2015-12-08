@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context="pe.edu.upeu.prosocial.Login"
+    android:paddingLeft="@dimen/objeto_margin"
+    android:paddingRight="@dimen/objeto_margin"
+    android:paddingTop="@dimen/objeto_margin"
+    android:paddingBottom="@dimen/objeto_margin"
+    android:scrollbars="none">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Proyeccion Social"
+                android:id="@+id/textView" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/objeto_margin_xl">
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Iniciar Sesion"
+                android:id="@+id/textView2" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/logoproyeccion2"
+            android:layout_height="197dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/objeto_margin_xl"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txtUsuario"
+            android:layout_marginBottom="@dimen/objeto_margin"
+            android:hint="@string/edt_usuario"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/txtClave"
+            android:layout_marginBottom="@dimen/objeto_margin_xl"
+            android:hint="@string/edt_clave" />
+
+        <Button
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/boton_entrar"
+            android:id="@+id/btnLogin"
+            android:layout_gravity="center_horizontal"
+            android:minWidth="88dp"
+            android:height="36dp"
+            style="@style/botones"
+            android:onClick="validar" />
+
+    </LinearLayout>
+</ScrollView>
